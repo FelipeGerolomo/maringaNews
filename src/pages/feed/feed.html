@@ -33,7 +33,7 @@
   <hr>
 
   <div class="content-news">
-    <div class="news" *ngFor='let news of numNews'>
+    <div class="news" *ngFor='let news of numNews' (click)="goToNews()">
       <ion-grid>
         <ion-row>
           <ion-col col-5>
