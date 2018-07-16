@@ -1,0 +1,83 @@
+.spacer {
+    flex: 1 1 auto;
+}
+.super-news {
+    width: 100%;
+    height: 275px;
+    background-image: url("../assets/imgs/trump.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+}
+
+
+.super-news-title {
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.008841036414565795) 100%);
+    padding: 0px 15px;
+}
+
+.super-news-title .title-category {
+    color: #FFEB62;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px 0px 0px;
+}
+
+.super-news-title .autor-news {
+    color: #BEBEBE;
+    font-size: 2rem;
+    font-family: 'Markazi Text', serif;
+    margin-left: 7px;
+}
+
+.super-news-title .title {
+    color: white;
+    font-family: 'Merriweather', serif;
+    margin: 5px 0px 25px 0px;
+}
+
+.header-day {
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.header-day h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #ADADAD;
+    margin: 10px 0px 10px 0px;
+}
+
+.content-ios hr {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.content-news {
+    width: 100%;
+    padding: 0px 5px;
+}
+
+.content-news .news h1 {
+    color: black;
+    font-family: 'Merriweather', serif;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.5rem;
+}
+
+.content-news .news h6 {
+    color: #777777;
+    font-size: 1.8rem;
+    font-family: 'Markazi Text', serif;
+    margin: 10px 0px 0px 0px;
+}
+
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #FFEB62;
+}

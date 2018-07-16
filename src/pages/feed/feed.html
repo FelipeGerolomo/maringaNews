@@ -1,0 +1,56 @@
+<!--
+  Generated template for the FeedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons start>
+        <button ion-button icon-only>
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div class="super-news">
+    <div class="super-news-title">
+      <h5 class="title-category">POLÍTICA
+        <span class="autor-news">Internacional</span>
+      </h5>
+      <h1 class="title">Trump diz que Kim Jong-un honrará 'contrato' firmado</h1>
+    </div>
+  </div>
+  <div class="header-day">
+    <h6>HOJE</h6>
+  </div>
+  <hr>
+
+  <div class="content-news">
+    <div class="news" *ngFor='let news of numNews'>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-5>
+            <img src="../assets/imgs/news1.jpg" alt="">
+          </ion-col>
+          <ion-col col-7>
+            <h1 class="news-title">
+              'Muito bom começo', diz Trump após encontro privado com Putin em Helsinque
+            </h1>
+            <h6 class="news-subtitle">Por Felipe Gerolomo</h6>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <hr>
+    </div>
+  </div>
+
+
+
+</ion-content>
