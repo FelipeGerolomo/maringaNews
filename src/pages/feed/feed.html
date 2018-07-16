@@ -9,7 +9,11 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Feed</ion-title>
+    <ion-buttons start>
+        <button ion-button icon-only>
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -27,8 +31,24 @@
     <h6>HOJE</h6>
   </div>
   <hr>
-  <div class="content-news">
 
+  <div class="content-news">
+    <div class="news" *ngFor='let news of numNews'>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-5>
+            <img src="../assets/imgs/news1.jpg" alt="">
+          </ion-col>
+          <ion-col col-7>
+            <h1 class="news-title">
+              'Muito bom começo', diz Trump após encontro privado com Putin em Helsinque
+            </h1>
+            <h6 class="news-subtitle">Por Felipe Gerolomo</h6>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <hr>
+    </div>
   </div>
 
 

@@ -1,3 +1,6 @@
+.spacer {
+    flex: 1 1 auto;
+}
 .super-news {
     width: 100%;
     height: 275px;
@@ -18,14 +21,14 @@
 }
 
 .super-news-title .title-category {
-    color: #f6e58d;
+    color: #FFEB62;
     font-size: 1.4rem;
     font-family: 'Roboto', sans-serif;
     margin: 0px 0px 0px 0px;
 }
 
 .super-news-title .autor-news {
-    color: #b9b9b9;
+    color: #BEBEBE;
     font-size: 2rem;
     font-family: 'Markazi Text', serif;
     margin-left: 7px;
@@ -37,15 +40,44 @@
     margin: 5px 0px 25px 0px;
 }
 
-.content-news {
+.header-day {
     width: 100%;
     padding: 0px 15px;
 }
 
-
-.header-day {
-    width: 100%;
+.header-day h6 {
     font-family: 'Roboto', sans-serif;
-    color: #b2bec3;
-    padding: 0px 15px;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #ADADAD;
+    margin: 10px 0px 10px 0px;
+}
+
+.content-ios hr {
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.content-news {
+    width: 100%;
+    padding: 0px 5px;
+}
+
+.content-news .news h1 {
+    color: black;
+    font-family: 'Merriweather', serif;
+    margin: 0px 0px 0px 0px;
+    font-size: 1.5rem;
+}
+
+.content-news .news h6 {
+    color: #777777;
+    font-size: 1.8rem;
+    font-family: 'Markazi Text', serif;
+    margin: 10px 0px 0px 0px;
+}
+
+.toolbar-background-md {
+    border-color: #b2b2b2;
+    background: #FFEB62;
 }
