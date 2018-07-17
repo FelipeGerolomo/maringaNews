@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
+import { LocalNotifications } from "@ionic-native/local-notifications";
+
+
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
@@ -10,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { FeedPage } from '../pages/feed/feed';
 import { NewsPage } from '../pages/news/news';
+import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,8 @@ import { NewsPage } from '../pages/news/news';
     HomePage,
     ListPage,
     FeedPage,
-    NewsPage
+    NewsPage,
+    ConfiguracoesPage
   ],
   imports: [
     BrowserModule,
@@ -29,12 +34,14 @@ import { NewsPage } from '../pages/news/news';
     HomePage,
     ListPage,
     FeedPage,
-    NewsPage
+    NewsPage,
+    ConfiguracoesPage
   
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    LocalNotifications,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
