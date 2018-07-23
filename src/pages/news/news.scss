@@ -18,7 +18,7 @@
 }
 
 .news-title h2 {
-    color: #666;
+    color: #696969;
     font-size: 1.5rem;
     font-family: 'Merriweather', serif;
     text-align: center;
@@ -65,6 +65,7 @@
 
 .news-content {
     margin-top: 18px;
+    margin-bottom: 30px;
     padding: 0px 15px;
 }
 
@@ -81,6 +82,36 @@
 .news-content .news-text p {
     text-align: left;
     font-family: 'Merriweather', serif;
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px;
+}
+
+.btn-navbar {
+    display: flex;
+    justify-content: center!important;
+}
+
+.font-size button {
+    font-size: 22px;
+    text-transform: inherit;
+}
+
+.bg-night {
+    background-color: #2E2E2E;
+}
+
+.f-white {
+    color: white!important;
+}
+
+.f-18 p {
+    font-size: 18px!important;
+}
+
+.f-yellow {
+    color: #F4EAB7!important;
+}
+
+.bg-white {
+    background-color: white;
 }

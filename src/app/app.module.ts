@@ -6,8 +6,6 @@ import { LocalNotifications } from "@ionic-native/local-notifications";
 
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,8 +16,6 @@ import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage,
     FeedPage,
     NewsPage,
     ConfiguracoesPage
@@ -31,8 +27,6 @@ import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage,
     FeedPage,
     NewsPage,
     ConfiguracoesPage

@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the NewsPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ToastController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -14,8 +8,54 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'news.html',
 })
 export class NewsPage {
+  isNight: boolean;
+  nightTheme: String;
+  fontSize: boolean;
+  isMarker: boolean;
+  heart: String;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
+    this.nightTheme = 'bg-night';
+    this.isNight = false;
+    this.fontSize = false;
+    this.isMarker = false;
+    this.heart = 'heart-outline';
+  }
+
+  isNightTheme() {
+    if (!this.isNight) {
+      this.isNight = true;
+    } else {
+      this.isNight = false;
+    }
+  }
+
+  isFontSize() {
+    if (!this.fontSize) {
+      this.fontSize = true;
+    } else {
+      this.fontSize = false;
+    }
+  }
+
+  markerNews() {
+    if (!this.isMarker) {
+      this.isMarker = true;
+      this.heart = 'heart';
+      const toast = this.toastCtrl.create({
+        message: 'Notícia adicionada nos favoritos',
+        duration: 2000
+      });
+      toast.present();
+    } else {
+      this.isMarker = false;
+      this.heart = 'heart-outline';
+      const toast = this.toastCtrl.create({
+        message: 'Notícia removida dos favoritos',
+        duration: 2000
+      });
+      toast.present();
+    }
   }
 
   ionViewDidLoad() {
