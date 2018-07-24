@@ -12,13 +12,15 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { FeedPage } from '../pages/feed/feed';
 import { NewsPage } from '../pages/news/news';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
+import { SearchNewsPage } from '../pages/search-news/search-news';
 
 @NgModule({
   declarations: [
     MyApp,
     FeedPage,
     NewsPage,
-    ConfiguracoesPage
+    ConfiguracoesPage,
+    SearchNewsPage
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
     MyApp,
     FeedPage,
     NewsPage,
+    SearchNewsPage,
     ConfiguracoesPage
   
   ],

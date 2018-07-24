@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NewsPage } from '../news/news';
+import { SearchNewsPage } from '../search-news/search-news';
 
 /**
  * Generated class for the FeedPage page.
@@ -21,6 +22,10 @@ export class FeedPage {
 
   goToNews() {
     this.navCtrl.push(NewsPage)
+  }
+
+  goToSearch() {
+    this.navCtrl.push(SearchNewsPage)
   }
 
   ionViewDidLoad() {

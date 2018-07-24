@@ -13,6 +13,7 @@ export class NewsPage {
   fontSize: boolean;
   isMarker: boolean;
   heart: String;
+  isMoon: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
     this.nightTheme = 'bg-night';
@@ -20,13 +21,16 @@ export class NewsPage {
     this.fontSize = false;
     this.isMarker = false;
     this.heart = 'heart-outline';
+    this.isMoon = 'moon';
   }
 
   isNightTheme() {
     if (!this.isNight) {
       this.isNight = true;
+      this.isMoon = 'sunny';
     } else {
       this.isNight = false;
+      this.isMoon = 'moon';
     }
   }
 
