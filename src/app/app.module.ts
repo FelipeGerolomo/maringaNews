@@ -13,6 +13,7 @@ import { FeedPage } from '../pages/feed/feed';
 import { NewsPage } from '../pages/news/news';
 import { ConfiguracoesPage } from '../pages/configuracoes/configuracoes';
 import { SearchNewsPage } from '../pages/search-news/search-news';
+import { SocialSharing } from '../../node_modules/@ionic-native/social-sharing';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { SearchNewsPage } from '../pages/search-news/search-news';
     StatusBar,
     SplashScreen,
     LocalNotifications,
+    SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

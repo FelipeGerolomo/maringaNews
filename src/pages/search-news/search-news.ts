@@ -16,7 +16,7 @@ import { IonicPage, NavController, NavParams, TextInput } from 'ionic-angular';
 export class SearchNewsPage {
   @ViewChild("searchBar") inputEl;;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public elementRef: ElementRef, private renderer: Renderer) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
     
   }
 
