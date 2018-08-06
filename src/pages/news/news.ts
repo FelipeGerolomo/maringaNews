@@ -26,7 +26,7 @@ export class NewsPage {
     this.isNight = false;
     this.fontSize = false;
     this.isMarker = false;
-    this.heart = 'heart-outline';
+    this.heart = 'star-outline';
     this.isMoon = 'moon';
   }
 
@@ -57,7 +57,7 @@ export class NewsPage {
   markerNews() {
     if (!this.isMarker) {
       this.isMarker = true;
-      this.heart = 'heart';
+      this.heart = 'star';
       const toast = this.toastCtrl.create({
         message: 'Notícia adicionada nos favoritos',
         duration: 2000
@@ -65,7 +65,7 @@ export class NewsPage {
       toast.present();
     } else {
       this.isMarker = false;
-      this.heart = 'heart-outline';
+      this.heart = 'star-outline';
       const toast = this.toastCtrl.create({
         message: 'Notícia removida dos favoritos',
         duration: 2000

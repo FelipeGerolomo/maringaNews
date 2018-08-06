@@ -24,7 +24,7 @@ export class ConfiguracoesPage {
     this.localNotifications.schedule({
       id: 1,
       title: 'Maringá News',
-      text: 'Trump diz que Kim Jong-un honrará "contrato" firmado',
+      text: 'O PDT definiu o nome de Ciro Gomes como candidato à Presidência',
       icon: 'res://icon'
     });
   }
